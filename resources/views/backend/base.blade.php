@@ -1,10 +1,12 @@
 <!--https://github.com/ColorlibHQ/AdminLTE/releases-->
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ticket Backend | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <base href="{{ url('') }}/">
+  <title>Currency Backend | Dashboard</title>
   @yield('prestyle')
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +19,7 @@
   @yield('poststyle')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
+  @yield('modal')
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -148,7 +151,7 @@
     <a href="index3.html" class="brand-link">
       <img src="{{ url('assets/backend/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Ticket Backend</span>
+      <span class="brand-text font-weight-light">Currency Backend</span>
     </a>
 
     <!-- Sidebar -->

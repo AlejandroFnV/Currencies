@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BackendController;
 use App\Http\Controllers\MonedaController;
+use App\Http\Controllers\AjaxMonedaController;
+use App\Http\Controllers\AjaxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +23,7 @@ Route::get('/', function () {
 
 Route::get('backend', [BackendController::class, 'main'])->name('backend.main');
 Route::resource('backend/currency', MonedaController::class, ['names' => 'backend.currency']);
+
+//AJAX
+Route::get('moneda', [AjaxController::class, 'moneda'])->name('moneda');
+Route::resource('ajaxmoneda', AjaxMonedaController::class, ['names' => 'ajaxmoneda']);
